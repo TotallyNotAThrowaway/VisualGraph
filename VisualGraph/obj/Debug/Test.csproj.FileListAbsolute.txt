@@ -1,0 +1,36 @@
+c:\users\pavyf\documents\visual studio 2015\Projects\Test\Test\bin\Debug\Test.exe.config
+c:\users\pavyf\documents\visual studio 2015\Projects\Test\Test\obj\Debug\Test.Form1.resources
+c:\users\pavyf\documents\visual studio 2015\Projects\Test\Test\obj\Debug\Test.Properties.Resources.resources
+c:\users\pavyf\documents\visual studio 2015\Projects\Test\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+c:\users\pavyf\documents\visual studio 2015\Projects\Test\Test\bin\Debug\Test.exe
+c:\users\pavyf\documents\visual studio 2015\Projects\Test\Test\bin\Debug\Test.pdb
+c:\users\pavyf\documents\visual studio 2015\Projects\Test\Test\obj\Debug\Test.exe
+c:\users\pavyf\documents\visual studio 2015\Projects\Test\Test\obj\Debug\Test.pdb
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\projects\Test\Test\bin\Debug\Test.exe.config
+D:\projects\Test\Test\obj\Debug\Test.exe
+D:\projects\Test\Test\obj\Debug\Test.pdb
+D:\projects\Test\Test\bin\Debug\Test.exe
+D:\projects\Test\Test\bin\Debug\Test.pdb
+D:\projects\Test\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\projects\Test\Test\obj\Debug\Test.Form1.resources
+D:\projects\Test\Test\obj\Debug\Test.Properties.Resources.resources
+D:\projects\Test\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+D:\projects\Test_new\Test\bin\Debug\Test.exe.config
+D:\projects\Test_new\Test\obj\Debug\Test.exe
+D:\projects\Test_new\Test\obj\Debug\Test.pdb
+D:\projects\Test_new\Test\bin\Debug\Test.exe
+D:\projects\Test_new\Test\bin\Debug\Test.pdb
+D:\projects\Test_new\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\projects\Test_new\Test\obj\Debug\Test.Form1.resources
+D:\projects\Test_new\Test\obj\Debug\Test.Properties.Resources.resources
+D:\projects\Test_new\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test_new\Test\bin\Debug\Test.exe.config
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test_new\Test\obj\Debug\Test.exe
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test_new\Test\obj\Debug\Test.pdb
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test_new\Test\bin\Debug\Test.exe
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test_new\Test\bin\Debug\Test.pdb
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test_new\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test_new\Test\obj\Debug\Test.Form1.resources
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test_new\Test\obj\Debug\Test.Properties.Resources.resources
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test_new\Test\obj\Debug\Test.csproj.GenerateResource.Cache
