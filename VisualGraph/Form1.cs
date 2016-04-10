@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Test
+namespace VisualGraph
 {
     public partial class Form1 : Form
     {
@@ -18,7 +18,6 @@ namespace Test
         private bool drawing = false;
         private Point MousePos;
         private PointF MouseSpeed;
-        private List<Point> Constraints = new List<Point>();
         private List<SplineNode> Nodes = new List<SplineNode>();
         private List<FullSpline> Splines = new List<FullSpline>();
         private int ClickedID = -1;
@@ -121,25 +120,23 @@ namespace Test
 
                 if (DrawDebug)
                 {
-                    g.DrawEllipse(System.Drawing.Pens.Green,
-                                    Constraints[Constraints.Count - 1].X - radius,
-                                    Constraints[Constraints.Count - 1].Y - radius,
+                    g.DrawEllipse(System.Drawing.Pens.Green, 
+                                    Nodes[Nodes.Count - 1].Constraint.X - radius,
+                                    Nodes[Nodes.Count - 1].Constraint.Y - radius,
                                     radius * 2, radius * 2);
 
                 }
-                if (Constraints.Count > 1)
+                if (Nodes.Count > 1)
                 {
-                    if (Math.Pow(Constraints[Constraints.Count - 2].X - MousePos.X, 2) +
-                         Math.Pow(Constraints[Constraints.Count - 2].Y - MousePos.Y, 2) < Math.Pow(radius, 2))
+                    if (Math.Pow(Nodes[Nodes.Count - 2].Constraint.X - MousePos.X, 2) +
+                        Math.Pow(Nodes[Nodes.Count - 2].Constraint.Y - MousePos.Y, 2) < Math.Pow(radius, 2))
                     {
-                        Constraints.Remove(Constraints[Constraints.Count - 1]);
                         Nodes.Remove(Nodes[Nodes.Count - 1]);
                     }
                 }
-                if (Math.Pow(Constraints[Constraints.Count - 1].X - MousePos.X, 2) +
-                    Math.Pow(Constraints[Constraints.Count - 1].Y - MousePos.Y, 2) > Math.Pow(radius, 2))
+                if (Math.Pow(Nodes[Nodes.Count - 1].Constraint.X - MousePos.X, 2) +
+                    Math.Pow(Nodes[Nodes.Count - 1].Constraint.Y - MousePos.Y, 2) > Math.Pow(radius, 2))
                 {
-                    Constraints.Add(MousePos);
                     Nodes.Add(new SplineNode(MousePos, MouseSpeed));
                 }
             }
@@ -193,7 +190,6 @@ namespace Test
 
                 }
                 MousePos = e.Location;
-                Constraints.Add(e.Location);
                 Nodes.Add(new SplineNode(Vertexes[VertexID], MouseSpeed, true));
             }
             else if (e.Button == MouseButtons.Middle)
@@ -263,8 +259,7 @@ namespace Test
                     BuiltSpline.Add(Vertexes[VertexID]);
                     Splines.Add(new FullSpline(BuiltSpline));
                 }
-
-                Constraints.Clear();
+                
                 Nodes.Clear();
             }
         }
