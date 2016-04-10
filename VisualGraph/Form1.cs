@@ -22,6 +22,7 @@ namespace Test
         private List<SplineNode> Nodes = new List<SplineNode>();
         private List<FullSpline> Splines = new List<FullSpline>();
         private int ClickedID = -1;
+        private int ClickedVertexID = -1;
         const int radius = 50;
         bool DrawDebug = false;
         private int VertexID = -1;
@@ -61,16 +62,24 @@ namespace Test
             
             foreach (FullSpline spln in Splines)
             {
-                spln.Draw(g, i++ == ClickedID);
+                spln.Draw(g, (i++ == ClickedID) ||
+                            ((ClickedVertexID > -1) 
+                              && 
+                              ((spln.Vertexes[0] == Vertexes[ClickedVertexID]) || (spln.Vertexes[spln.Vertexes.Count - 1] == Vertexes[ClickedVertexID]))));
             }
             i = 0;
 
-            Pen RedWide = new Pen(Color.Red);
-            RedWide.Width = 2;
+            Pen VertexPen = new Pen(Color.Red);
+            VertexPen.Width = 2;
             foreach (Point dot in Vertexes)
             {
-                g.DrawEllipse(RedWide, dot.X - 2, dot.Y - 2, 4, 4);
+                g.DrawEllipse(VertexPen, dot.X - 2, dot.Y - 2, 4, 4);
             }
+            if (ClickedVertexID > -1)
+            {
+                VertexPen.Color = Color.DarkCyan;
+                g.DrawEllipse(VertexPen, Vertexes[ClickedVertexID].X - 6, Vertexes[ClickedVertexID].Y - 6, 12, 12);
+            }            
             if (VertexID > -1)
             {
                 g.DrawEllipse(System.Drawing.Pens.Azure, Vertexes[VertexID].X - lockRadius,
@@ -236,6 +245,7 @@ namespace Test
                 // сохраняем сплайн
                 if ((VertexID > -1) && (Nodes.Count > 2))
                 {
+                    ClickedVertexID = -1;
                     List<Point> BuiltSpline = new List<Point>();
                     int i = 0;
                     foreach (SplineNode dot in Nodes)
@@ -262,9 +272,11 @@ namespace Test
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
             ClickedID = -1;
+            ClickedVertexID = -1;
+            int i = 0;
             if (!drawing)
             {
-                int i = 0;
+                i = 0;
                 foreach (FullSpline spln in Splines)
                 {
                     if (spln.Clicked(e.Location))
@@ -274,10 +286,20 @@ namespace Test
                     }
                     i++;
                 }
-                if ((ClickedID > -1) && (e.Button == MouseButtons.Right))
+            }
+            i = 0;
+            foreach (Point v in Vertexes)
+            {
+                if (Math.Pow(v.X - e.X, 2) + Math.Pow(v.Y - e.Y, 2) < Math.Pow(lockRadius, 2))
                 {
-                    contextMenuStrip1.Show(new Point(e.X + Left, e.Y + Top));
+                    ClickedID = -1;
+                    ClickedVertexID = i;
                 }
+                i++;
+            }
+            if (((ClickedID > -1) || (ClickedVertexID > -1)) && (e.Button == MouseButtons.Right))
+            {
+                contextMenuStrip1.Show(new Point(e.X + Left, e.Y + Top));
             }
         }
 
@@ -287,6 +309,23 @@ namespace Test
             {
                 Splines.RemoveAt(ClickedID);
                 ClickedID = -1;
+            }
+            if (ClickedVertexID > -1)
+            {
+                List<FullSpline> toRemove = new List<FullSpline>();
+                foreach (FullSpline spln in Splines)
+                {
+                    if((spln.Vertexes[0] == Vertexes[ClickedVertexID]) || (spln.Vertexes[spln.Vertexes.Count-1] == Vertexes[ClickedVertexID]))
+                    {
+                        toRemove.Add(spln);
+                    }
+                }
+                foreach (FullSpline spln in toRemove)
+                {
+                    Splines.Remove(spln);
+                }
+                Vertexes.RemoveAt(ClickedVertexID);
+                ClickedVertexID = -1;
             }
         }
     }
