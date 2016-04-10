@@ -21,20 +21,23 @@ namespace VisualGraph
         {
             if (Vertexes.Count > 0)
             {
-                Color col = new Color();
+                Pen SplinePen = new Pen(Color.Black);
                 if (clicked)
                 {
-                    col = Color.Red;
+                    SplinePen.Color = Color.Red;
+                    SplinePen.Width = 2;
                 }
                 else if (Vertexes[0] == Vertexes[Vertexes.Count - 1])
                 {
-                    col = Color.Green;
+                    SplinePen.Color = Color.Fuchsia;
+                    SplinePen.Width = 2;
                 }
                 else
                 {
-                    col = Color.Aqua;
+                    SplinePen.Color = Color.Black;
+                    SplinePen.Width = 1;
                 }
-                Pen SplinePen = new Pen(col);
+
                 g.DrawBeziers(SplinePen, Vertexes.ToArray<Point>());
             }
         }

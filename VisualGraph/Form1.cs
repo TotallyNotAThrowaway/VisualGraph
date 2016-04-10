@@ -55,7 +55,7 @@ namespace VisualGraph
 
         private void DrawToBuffer(Graphics g)
         {
-            g.Clear(Color.Black);
+            g.Clear(Color.White);
             int i = 0;
 
             
@@ -68,20 +68,21 @@ namespace VisualGraph
             }
             i = 0;
 
-            Pen VertexPen = new Pen(Color.Red);
-            VertexPen.Width = 2;
+            Pen VertexPen = new Pen(Color.DarkGreen);
+            VertexPen.Width = 6;
             foreach (Point dot in Vertexes)
             {
-                g.DrawEllipse(VertexPen, dot.X - 2, dot.Y - 2, 4, 4);
+                g.DrawEllipse(VertexPen, dot.X - 3, dot.Y - 3, 6, 6);
             }
             if (ClickedVertexID > -1)
             {
+                VertexPen.Width = 2;
                 VertexPen.Color = Color.DarkCyan;
-                g.DrawEllipse(VertexPen, Vertexes[ClickedVertexID].X - 6, Vertexes[ClickedVertexID].Y - 6, 12, 12);
+                g.DrawEllipse(VertexPen, Vertexes[ClickedVertexID].X - 9, Vertexes[ClickedVertexID].Y - 9, 18, 18);
             }            
             if (VertexID > -1)
             {
-                g.DrawEllipse(System.Drawing.Pens.Azure, Vertexes[VertexID].X - lockRadius,
+                g.DrawEllipse(System.Drawing.Pens.Blue, Vertexes[VertexID].X - lockRadius,
                                                          Vertexes[VertexID].Y - lockRadius,
                                                          lockRadius * 2, lockRadius * 2);
             }
@@ -97,10 +98,10 @@ namespace VisualGraph
 
                     if (DrawDebug)
                     {
-                        g.DrawEllipse(System.Drawing.Pens.Red,   dot.Constraint.X - 1, dot.Constraint.Y - 1, 2, 2);
-                        g.DrawEllipse(System.Drawing.Pens.White, dot.Position.X - 1  , dot.Position.Y   - 1, 2, 2);
-                        g.DrawEllipse(System.Drawing.Pens.Blue,  dot.LeftLean.X - 1  , dot.LeftLean.Y   - 1, 2, 2);
-                        g.DrawEllipse(System.Drawing.Pens.Blue,  dot.RightLean.X - 1 , dot.RightLean.Y  - 1, 2, 2);
+                        g.DrawEllipse(System.Drawing.Pens.Red,   dot.Constraint.X - 2, dot.Constraint.Y - 2, 4, 4);
+                        g.DrawEllipse(System.Drawing.Pens.Black, dot.Position.X - 2  , dot.Position.Y   - 2, 4, 4);
+                        g.DrawEllipse(System.Drawing.Pens.Blue,  dot.LeftLean.X - 2  , dot.LeftLean.Y   - 2, 4, 4);
+                        g.DrawEllipse(System.Drawing.Pens.Blue,  dot.RightLean.X - 2 , dot.RightLean.Y  - 2, 4, 4);
 
                     }
 
@@ -112,10 +113,10 @@ namespace VisualGraph
                     Spline[j++] = dot.RightLean;
                     i++;
                 }
-                Spline[j  ].X = MousePos.X - Convert.ToInt32(MouseSpeed.X * SplineNode.nodeForce);
-                Spline[j++].Y = MousePos.Y - Convert.ToInt32(MouseSpeed.Y * SplineNode.nodeForce);
+                Spline[j  ].X = MousePos.X - (int)(MouseSpeed.X * SplineNode.nodeForce);
+                Spline[j++].Y = MousePos.Y - (int)(MouseSpeed.Y * SplineNode.nodeForce);
                 Spline[j++] = MousePos;
-                g.DrawBeziers(System.Drawing.Pens.White, Spline);
+                g.DrawBeziers(System.Drawing.Pens.DarkGreen, Spline);
 
 
                 if (DrawDebug)
@@ -254,8 +255,8 @@ namespace VisualGraph
                         BuiltSpline.Add(dot.RightLean);
                         i++;
                     }
-                    BuiltSpline.Add(new Point(MousePos.X - Convert.ToInt32(MouseSpeed.X * SplineNode.nodeForce),
-                                              MousePos.Y - Convert.ToInt32(MouseSpeed.Y * SplineNode.nodeForce)));
+                    BuiltSpline.Add(new Point(MousePos.X - (int)(MouseSpeed.X * SplineNode.nodeForce),
+                                              MousePos.Y - (int)(MouseSpeed.Y * SplineNode.nodeForce)));
                     BuiltSpline.Add(Vertexes[VertexID]);
                     Splines.Add(new FullSpline(BuiltSpline));
                 }

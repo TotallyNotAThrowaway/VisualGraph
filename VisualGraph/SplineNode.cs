@@ -28,8 +28,8 @@ namespace VisualGraph
             this.Speed.X = Math.Min(Speed.X, maxSpeed) * speedForce;
             this.Speed.Y = Math.Min(Speed.Y, maxSpeed) * speedForce;
 
-            Position.X = Constraint.X + rand.Next(-spread, spread);// + Convert.ToInt32(rand.Next() * this.Speed.X + rand.Next() * (this.Speed.Y * multiplier));
-            Position.Y = Constraint.Y + rand.Next(-spread, spread);// + Convert.ToInt32(rand.Next() * this.Speed.Y + rand.Next() * (this.Speed.X * multiplier));
+            Position.X = Constraint.X + rand.Next(-spread, spread);// + (int)(rand.Next() * this.Speed.X + rand.Next() * (this.Speed.Y * multiplier));
+            Position.Y = Constraint.Y + rand.Next(-spread, spread);// + (int)(rand.Next() * this.Speed.Y + rand.Next() * (this.Speed.X * multiplier));
 
             if (locked)
             {
@@ -37,10 +37,10 @@ namespace VisualGraph
                 this.Position = Constraint;
             }
 
-            LeftLean.X = Position.X - Convert.ToInt32(Speed.X * nodeForce);
-            LeftLean.Y = Position.Y - Convert.ToInt32(Speed.Y * nodeForce);
-            RightLean.X = Position.X + Convert.ToInt32(Speed.X * nodeForce);
-            RightLean.Y = Position.Y + Convert.ToInt32(Speed.Y * nodeForce);
+            LeftLean.X = Position.X - (int)(Speed.X * nodeForce);
+            LeftLean.Y = Position.Y - (int)(Speed.Y * nodeForce);
+            RightLean.X = Position.X + (int)(Speed.X * nodeForce);
+            RightLean.Y = Position.Y + (int)(Speed.Y * nodeForce);
             //для точек привязки, тяготения и текущей точки(белой) присваивается положение по вызову.
 
         }
@@ -52,12 +52,12 @@ namespace VisualGraph
             Speed.Y += (Position.Y - Constraint.Y) * force;
             Speed.X *= damping;
             Speed.Y *= damping;
-            Position.X = Convert.ToInt32(Position.X + Speed.X);
-            Position.Y = Convert.ToInt32(Position.Y + Speed.Y);
-            LeftLean.X = Convert.ToInt32(LeftLean.X + Speed.X);
-            LeftLean.Y = Convert.ToInt32(LeftLean.Y + Speed.Y);
-            RightLean.X = Convert.ToInt32(RightLean.X + Speed.X);
-            RightLean.Y = Convert.ToInt32(RightLean.Y + Speed.Y);
+            Position.X = (int)(Position.X + Speed.X);
+            Position.Y = (int)(Position.Y + Speed.Y);
+            LeftLean.X = (int)(LeftLean.X + Speed.X);
+            LeftLean.Y = (int)(LeftLean.Y + Speed.Y);
+            RightLean.X = (int)(RightLean.X + Speed.X);
+            RightLean.Y = (int)(RightLean.Y + Speed.Y);
 
             return 0;
         }
