@@ -16,3 +16,12 @@ C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.exe
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.pdb
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.Form1.resources
+D:\projects\VisualGraph\VisualGraph\bin\Debug\VisualGraph.exe.config
+D:\projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.exe
+D:\projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.pdb
+D:\projects\VisualGraph\VisualGraph\bin\Debug\VisualGraph.exe
+D:\projects\VisualGraph\VisualGraph\bin\Debug\VisualGraph.pdb
+D:\projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.csprojResolveAssemblyReference.cache
+D:\projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.Form1.resources
+D:\projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.Properties.Resources.resources
+D:\projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.csproj.GenerateResource.Cache

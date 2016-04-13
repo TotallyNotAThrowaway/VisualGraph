@@ -170,7 +170,7 @@ namespace VisualGraph
 
         private void Form1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            if ((e.Button == MouseButtons.Left) && (VertexID == -1))
             {
                 Vertexes.Add(new Point(e.X, e.Y));
             }
@@ -186,8 +186,8 @@ namespace VisualGraph
                 if (e.Location != MousePos)
                 {
                     double spd = Math.Sqrt(Math.Pow(MouseSpeed.X, 2) + Math.Pow(MouseSpeed.Y, 2));
-                    MouseSpeed.X /= Convert.ToSingle(spd);
-                    MouseSpeed.Y /= Convert.ToSingle(spd);
+                    MouseSpeed.X /= (float)spd;
+                    MouseSpeed.Y /= (float)spd;
 
                 }
                 MousePos = e.Location;
@@ -206,8 +206,8 @@ namespace VisualGraph
             if (e.Location != MousePos)
             {
                 double spd = Math.Sqrt(Math.Pow(MouseSpeed.X, 2) + Math.Pow(MouseSpeed.Y, 2));
-                MouseSpeed.X /= Convert.ToSingle(spd);
-                MouseSpeed.Y /= Convert.ToSingle(spd);
+                MouseSpeed.X /= (float)spd;
+                MouseSpeed.Y /= (float)spd;
 
             }
             MousePos = e.Location;
@@ -233,8 +233,8 @@ namespace VisualGraph
                 if (e.Location != MousePos)
                 {
                     double spd = Math.Sqrt(Math.Pow(MouseSpeed.X, 2) + Math.Pow(MouseSpeed.Y, 2));
-                    MouseSpeed.X /= Convert.ToSingle(spd);
-                    MouseSpeed.Y /= Convert.ToSingle(spd);
+                    MouseSpeed.X /= (float)spd;
+                    MouseSpeed.Y /= (float)spd;
 
                 }
                 MousePos = e.Location;
@@ -293,8 +293,18 @@ namespace VisualGraph
                 }
                 i++;
             }
-            if (((ClickedID > -1) || (ClickedVertexID > -1)) && (e.Button == MouseButtons.Right))
+            if (e.Button == MouseButtons.Right)
             {
+                if ((ClickedID>-1) || (ClickedVertexID>-1))
+                {
+                    удалитьToolStripMenuItem.Visible = true;
+                    удалитьВсеToolStripMenuItem.Visible = false;
+                }
+                else
+                {
+                    удалитьToolStripMenuItem.Visible = false;
+                    удалитьВсеToolStripMenuItem.Visible = true;
+                }
                 contextMenuStrip1.Show(new Point(e.X + Left, e.Y + Top));
             }
         }
@@ -323,6 +333,20 @@ namespace VisualGraph
                 Vertexes.RemoveAt(ClickedVertexID);
                 ClickedVertexID = -1;
             }
+        }
+
+        private void удалитьВсеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (FullSpline spln in Splines)
+            {
+                spln.Vertexes.Clear();
+            }
+            Splines.Clear();
+            Vertexes.Clear();
+            Nodes.Clear();
+            VertexID = -1;
+            ClickedID = -1;
+            ClickedVertexID = -1;
         }
     }
 }
