@@ -27,6 +27,7 @@ namespace VisualGraph
         private int VertexID = -1;
         const int lockRadius = 15;
         
+        
 
         public Form1()
         {
@@ -64,7 +65,7 @@ namespace VisualGraph
                 spln.Draw(g, (i++ == ClickedID) ||
                             ((ClickedVertexID > -1) 
                               && 
-                              ((spln.Vertexes[0] == Vertexes[ClickedVertexID]) || (spln.Vertexes[spln.Vertexes.Count - 1] == Vertexes[ClickedVertexID]))));
+                             ((spln.Vertexes[0] == Vertexes[ClickedVertexID]) || (spln.Vertexes[spln.Vertexes.Count - 1] == Vertexes[ClickedVertexID]))));
             }
             i = 0;
 
@@ -186,8 +187,8 @@ namespace VisualGraph
                 if (e.Location != MousePos)
                 {
                     double spd = Math.Sqrt(Math.Pow(MouseSpeed.X, 2) + Math.Pow(MouseSpeed.Y, 2));
-                    MouseSpeed.X /= Convert.ToSingle(spd);
-                    MouseSpeed.Y /= Convert.ToSingle(spd);
+                    MouseSpeed.X /= (float)spd;
+                    MouseSpeed.Y /= (float)spd;
 
                 }
                 MousePos = e.Location;
@@ -206,8 +207,8 @@ namespace VisualGraph
             if (e.Location != MousePos)
             {
                 double spd = Math.Sqrt(Math.Pow(MouseSpeed.X, 2) + Math.Pow(MouseSpeed.Y, 2));
-                MouseSpeed.X /= Convert.ToSingle(spd);
-                MouseSpeed.Y /= Convert.ToSingle(spd);
+                MouseSpeed.X /= (float)spd;
+                MouseSpeed.Y /= (float)spd;
 
             }
             MousePos = e.Location;
@@ -233,8 +234,8 @@ namespace VisualGraph
                 if (e.Location != MousePos)
                 {
                     double spd = Math.Sqrt(Math.Pow(MouseSpeed.X, 2) + Math.Pow(MouseSpeed.Y, 2));
-                    MouseSpeed.X /= Convert.ToSingle(spd);
-                    MouseSpeed.Y /= Convert.ToSingle(spd);
+                    MouseSpeed.X /= (float)spd;
+                    MouseSpeed.Y /= (float)spd;
 
                 }
                 MousePos = e.Location;
