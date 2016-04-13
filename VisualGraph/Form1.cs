@@ -27,7 +27,6 @@ namespace VisualGraph
         private int VertexID = -1;
         const int lockRadius = 15;
         
-        
 
         public Form1()
         {
@@ -65,7 +64,7 @@ namespace VisualGraph
                 spln.Draw(g, (i++ == ClickedID) ||
                             ((ClickedVertexID > -1) 
                               && 
-                             ((spln.Vertexes[0] == Vertexes[ClickedVertexID]) || (spln.Vertexes[spln.Vertexes.Count - 1] == Vertexes[ClickedVertexID]))));
+                              ((spln.Vertexes[0] == Vertexes[ClickedVertexID]) || (spln.Vertexes[spln.Vertexes.Count - 1] == Vertexes[ClickedVertexID]))));
             }
             i = 0;
 
@@ -171,7 +170,7 @@ namespace VisualGraph
 
         private void Form1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            if ((e.Button == MouseButtons.Left) && (VertexID == -1))
             {
                 Vertexes.Add(new Point(e.X, e.Y));
             }
@@ -294,8 +293,18 @@ namespace VisualGraph
                 }
                 i++;
             }
-            if (((ClickedID > -1) || (ClickedVertexID > -1)) && (e.Button == MouseButtons.Right))
+            if (e.Button == MouseButtons.Right)
             {
+                if ((ClickedID>-1) || (ClickedVertexID>-1))
+                {
+                    удалитьToolStripMenuItem.Visible = true;
+                    удалитьВсеToolStripMenuItem.Visible = false;
+                }
+                else
+                {
+                    удалитьToolStripMenuItem.Visible = false;
+                    удалитьВсеToolStripMenuItem.Visible = true;
+                }
                 contextMenuStrip1.Show(new Point(e.X + Left, e.Y + Top));
             }
         }
@@ -324,6 +333,23 @@ namespace VisualGraph
                 Vertexes.RemoveAt(ClickedVertexID);
                 ClickedVertexID = -1;
             }
+        }
+
+        private void удалитьВсеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // здес все удаляем, это типа коммент
+            foreach (FullSpline spln in Splines)
+            {
+                spln.Vertexes.Clear();
+            }
+            Splines.Clear();
+            Vertexes.Clear();
+            Nodes.Clear();
+            VertexID = -1;
+            ClickedID = -1;
+            ClickedVertexID = -1;
+
+            //
         }
     }
 }
