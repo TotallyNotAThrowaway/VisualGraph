@@ -57,7 +57,7 @@
             this.удалитьToolStripMenuItem.Text = "Удалить";
             this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
             // 
-            // удалитьВсеToolStripMenuItem
+            // удалитьВсеToolStripMenuItem и, надеюсь, добавить кусок
             // 
             this.удалитьВсеToolStripMenuItem.Name = "удалитьВсеToolStripMenuItem";
             this.удалитьВсеToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
