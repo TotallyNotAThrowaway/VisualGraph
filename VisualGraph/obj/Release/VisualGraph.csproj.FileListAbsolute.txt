@@ -1,0 +1,8 @@
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\bin\Release\VisualGraph.exe.config
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\bin\Release\VisualGraph.exe
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\bin\Release\VisualGraph.pdb
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Release\VisualGraph.Form1.resources
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Release\VisualGraph.Properties.Resources.resources
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Release\VisualGraph.csproj.GenerateResource.Cache
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Release\VisualGraph.exe
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Release\VisualGraph.pdb
