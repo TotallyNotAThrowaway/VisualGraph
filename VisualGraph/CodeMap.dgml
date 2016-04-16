@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @2 @3 Member=MousePos)" Category="CodeSchema_Field" Bounds="1414.02269714355,431.854005943961,124.356666666667,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="MousePos" Icon="Microsoft.VisualStudio.Field.Private" Label="MousePos : Point" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=18 StartCharacterOffset=22 EndLineNumber=18 EndCharacterOffset=30)" />
+    <Node Id="(@1 @2 @6 Member=Constraint)" Category="CodeSchema_Field" Bounds="-42.4773028564455,699.854005943961,125.493333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="Constraint" Icon="Microsoft.VisualStudio.Field.Public" Label="Constraint : Point" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/SplineNode.cs&quot; StartLineNumber=11 StartCharacterOffset=21 EndLineNumber=11 EndCharacterOffset=31)" />
+    <Node Id="(@1 @2 @6 Member=LeftLean)" Category="CodeSchema_Field" Bounds="1557.90936381022,375.854005943961,117.743333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="LeftLean" Icon="Microsoft.VisualStudio.Field.Public" Label="LeftLean : Point" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/SplineNode.cs&quot; StartLineNumber=14 StartCharacterOffset=21 EndLineNumber=14 EndCharacterOffset=29)" />
+    <Node Id="(@1 @2 @6 Member=Position)" Category="CodeSchema_Field" Bounds="1414.02269714355,375.854005943961,113.886666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="Position" Icon="Microsoft.VisualStudio.Field.Public" Label="Position : Point" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/SplineNode.cs&quot; StartLineNumber=12 StartCharacterOffset=21 EndLineNumber=12 EndCharacterOffset=29)" />
+    <Node Id="(@1 @2 @6 Member=RightLean)" Category="CodeSchema_Field" Bounds="1414.02269714355,487.854005943961,124.53,26" CodeSchemaProperty_IsPublic="True" CommonLabel="RightLean" Icon="Microsoft.VisualStudio.Field.Public" Label="RightLean : Point" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/SplineNode.cs&quot; StartLineNumber=14 StartCharacterOffset=31 EndLineNumber=14 EndCharacterOffset=40)" />
+    <Node Id="(@1 @2 @6 Member=Speed)" Category="CodeSchema_Field" Bounds="-42.4773028564455,643.854005943961,111.733333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="Speed" Icon="Microsoft.VisualStudio.Field.Public" Label="Speed : PointF" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/SplineNode.cs&quot; StartLineNumber=13 StartCharacterOffset=22 EndLineNumber=13 EndCharacterOffset=27)" />
+    <Node Id="@10" Category="CodeSchema_Method" Bounds="1090.48103047689,290.354005943961,139.146666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="Clicked" Icon="Microsoft.VisualStudio.Method.Public" Label="Clicked(Point) : bool" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/FullSpline.cs&quot; StartLineNumber=44 StartCharacterOffset=20 EndLineNumber=44 EndCharacterOffset=27)" />
+    <Node Id="@12" Category="CodeSchema_Method" Bounds="1090.48103047689,346.354005943961,203.110000000001,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Draw" Group="Collapsed" Icon="Microsoft.VisualStudio.Method.Public" Label="Draw(Graphics, [bool]) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/FullSpline.cs&quot; StartLineNumber=19 StartCharacterOffset=20 EndLineNumber=19 EndCharacterOffset=24)" />
+    <Node Id="@13" Category="CodeSchema_Method" Bounds="-82.4773028564455,263.854005943961,222.183333333333,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="timer1_Tick" Icon="Microsoft.VisualStudio.Method.Private" Label="timer1_Tick(object, EventArgs) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=35 StartCharacterOffset=21 EndLineNumber=35 EndCharacterOffset=32)" />
+    <Node Id="@14" Category="CodeSchema_Method" Bounds="663.426030476888,131.854005943961,326.623333333333,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="удалитьToolStripMenuItem_Click" Icon="Microsoft.VisualStudio.Method.Private" Label="удалитьToolStripMenuItem_Click(object, EventArgs) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=311 StartCharacterOffset=21 EndLineNumber=311 EndCharacterOffset=51)" />
+    <Node Id="@15" Category="CodeSchema_Method" Bounds="1020.04936381022,-13.1459940560392,343.973333333333,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="удалитьВсеToolStripMenuItem_Click" Icon="Microsoft.VisualStudio.Method.Private" Label="удалитьВсеToolStripMenuItem_Click(object, EventArgs) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=337 StartCharacterOffset=21 EndLineNumber=337 EndCharacterOffset=54)" />
+    <Node Id="@18" Category="CodeSchema_Method" Bounds="683.151030476888,-13.1459940560391,287.173333333333,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="Form1_MouseClick" Icon="Microsoft.VisualStudio.Method.Private" Label="Form1_MouseClick(object, MouseEventArgs) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=267 StartCharacterOffset=21 EndLineNumber=267 EndCharacterOffset=37)" />
+    <Node Id="@19" Category="CodeSchema_Method" Bounds="666.176030476888,43.8540059439609,321.123333333333,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="Form1_MouseDoubleClick" Icon="Microsoft.VisualStudio.Method.Private" Label="Form1_MouseDoubleClick(object, MouseEventArgs) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=170 StartCharacterOffset=21 EndLineNumber=170 EndCharacterOffset=43)" />
+    <Node Id="@20" Category="CodeSchema_Method" Bounds="680.381030476888,219.854005943961,292.713333333333,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="Form1_MouseDown" Icon="Microsoft.VisualStudio.Method.Private" Label="Form1_MouseDown(object, MouseEventArgs) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=178 StartCharacterOffset=21 EndLineNumber=178 EndCharacterOffset=36)" />
+    <Node Id="@21" Category="CodeSchema_Method" Bounds="169.706030476888,30.8540059439609,290.703333333333,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="Form1_MouseMove" Icon="Microsoft.VisualStudio.Method.Private" Label="Form1_MouseMove(object, MouseEventArgs) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=201 StartCharacterOffset=21 EndLineNumber=201 EndCharacterOffset=36)" />
+    <Node Id="@22" Category="CodeSchema_Method" Bounds="687.599363810221,307.854005943961,278.276666666667,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="Form1_MouseUp" Icon="Microsoft.VisualStudio.Method.Private" Label="Form1_MouseUp(object, MouseEventArgs) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=225 StartCharacterOffset=21 EndLineNumber=225 EndCharacterOffset=34)" />
+    <Node Id="@23" Category="CodeSchema_Field" Bounds="507.061030476888,144.854005943961,109.713333333333,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="ClickedID" Icon="Microsoft.VisualStudio.Field.Private" Label="ClickedID : int" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=22 StartCharacterOffset=20 EndLineNumber=22 EndCharacterOffset=29)" />
+    <Node Id="@24" Category="CodeSchema_Field" Bounds="491.421921410221,87.9512060411608,140.946666666667,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="ClickedVertexID" Icon="Microsoft.VisualStudio.Field.Private" Label="ClickedVertexID : int" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=23 StartCharacterOffset=20 EndLineNumber=23 EndCharacterOffset=35)" />
+    <Node Id="@25" Category="CodeSchema_Field" Bounds="1127.43269714355,421.854005943961,129.206666666667,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="DrawDebug" Icon="Microsoft.VisualStudio.Field.Private" Label="DrawDebug : bool" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=25 StartCharacterOffset=13 EndLineNumber=25 EndCharacterOffset=22)" />
+    <Node Id="@26" Category="CodeSchema_Field" Bounds="1136.53103047689,193.854005943961,111.01,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="drawing" Icon="Microsoft.VisualStudio.Field.Private" Label="drawing : bool" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=17 StartCharacterOffset=21 EndLineNumber=17 EndCharacterOffset=28)" />
+    <Node Id="@27" Category="CodeSchema_Field" Bounds="490.409363810221,-26.1459940560391,143.016666666666,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="MouseSpeed" Icon="Microsoft.VisualStudio.Field.Private" Label="MouseSpeed : PointF" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=19 StartCharacterOffset=23 EndLineNumber=19 EndCharacterOffset=33)" />
+    <Node Id="@28" Category="CodeSchema_Field" Bounds="1394.02269714355,335.854005943961,301.63,198" CodeSchemaProperty_IsPrivate="True" CommonLabel="Nodes" Group="Expanded" Icon="Microsoft.VisualStudio.Field.Private" Label="Nodes : List&lt;SplineNode&gt;" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=20 StartCharacterOffset=33 EndLineNumber=20 EndCharacterOffset=38)" />
+    <Node Id="@29" Category="CodeSchema_Field" Bounds="1070.48103047689,250.354005943961,243.110000000001,141" CodeSchemaProperty_IsPrivate="True" CommonLabel="Splines" Group="Expanded" Icon="Microsoft.VisualStudio.Field.Private" Label="Splines : List&lt;FullSpline&gt;" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=21 StartCharacterOffset=33 EndLineNumber=21 EndCharacterOffset=40)" />
+    <Node Id="@30" Category="CodeSchema_Method" Bounds="-62.4773028564455,603.854005943961,165.493333333333,142" CodeSchemaProperty_IsPublic="True" CommonLabel="Update" Group="Expanded" Icon="Microsoft.VisualStudio.Method.Public" Label="Update() : int" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/SplineNode.cs&quot; StartLineNumber=47 StartCharacterOffset=19 EndLineNumber=47 EndCharacterOffset=25)" />
+    <Node Id="@31" Category="CodeSchema_Field" Bounds="1116.71436381022,87.8540059439608,150.643333333333,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="Vertexes" Icon="Microsoft.VisualStudio.Field.Private" Label="Vertexes : List&lt;Point&gt;" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=16 StartCharacterOffset=28 EndLineNumber=16 EndCharacterOffset=36)" />
+    <Node Id="@32" Category="CodeSchema_Field" Bounds="508.474363810221,30.8540059439609,106.886666666667,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="VertexID" Icon="Microsoft.VisualStudio.Field.Private" Label="VertexID : int" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=26 StartCharacterOffset=20 EndLineNumber=26 EndCharacterOffset=28)" />
+    <Node Id="@4" Category="CodeSchema_Class" Bounds="-102.477302856445,-66.1459940560391,1818.13,852" CodeSchemaProperty_IsPublic="True" CommonLabel="Form1" Group="Expanded" Icon="Microsoft.VisualStudio.Class.Public" Label="Form1" LayoutSettings="LeftToRight" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.Designer.cs&quot; StartLineNumber=2 StartCharacterOffset=18 EndLineNumber=2 EndCharacterOffset=23)" UseManualLocation="True" />
+    <Node Id="@7" Category="CodeSchema_Class" Bounds="-82.4773028564455,563.854005943961,205.493333333333,202" CodeSchemaProperty_IsInternal="True" CommonLabel="SplineNode" Group="Expanded" Icon="Microsoft.VisualStudio.Class.Internal" Label="SplineNode" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/SplineNode.cs&quot; StartLineNumber=9 StartCharacterOffset=10 EndLineNumber=9 EndCharacterOffset=20)" />
+    <Node Id="@9" Category="CodeSchema_Method" Bounds="220.479363810221,263.854005943961,189.156666666667,26" CodeSchemaProperty_IsPrivate="True" CommonLabel="DrawToBuffer" Icon="Microsoft.VisualStudio.Method.Private" Label="DrawToBuffer(Graphics) : void" SourceLocation="(Assembly=&quot;file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/Form1.cs&quot; StartLineNumber=55 StartCharacterOffset=21 EndLineNumber=55 EndCharacterOffset=33)" />
+  </Nodes>
+  <Links>
+    <Link Source="@10" Target="@23" Bounds="623.469531500404,172.826819550656,483.14304991287,117.527136393305" />
+    <Link Source="@13" Target="@30" Bounds="21.9467092782253,289.854005943961,6.39507915511154,305.001977679374" />
+    <Link Source="@13" Target="@9" Bounds="139.706024169922,276.85400390625,71.7733459472656,0" />
+    <Link Source="@18" Target="@10" Bounds="841.014854904755,12.8540059439609,298.107710175862,271.440597428837" />
+    <Link Source="@18" Target="@15" Bounds="970.324340820313,-0.145994052290916,40.7250366210938,0" />
+    <Link Source="@18" Target="@31" Bounds="877.164367675781,12.8540058135986,261.598937988281,72.4831447601318" />
+    <Link Source="@19" Target="@31" Bounds="934.666748046875,69.85400390625,173.112182617188,20.8512802124023" />
+    <Link Source="@20" Target="@26" Bounds="973.065551757813,211.443511962891,154.488159179688,10.9956512451172" />
+    <Link Source="@20" Target="@31" Bounds="900.1953125,117.998710632324,258.794677734375,101.855293273926" />
+    <Link Source="@21" Target="@27" Bounds="371.359100341797,1.87883114814758,125.487915039063,28.9751746654511" />
+    <Link Source="@21" Target="@32" Bounds="460.409362792969,43.8540077209473,39.0650024414063,0" />
+    <Link Source="@22" Target="@26" Bounds="885.342895507813,222.527481079102,256.311645507813,85.3265228271484" />
+    <Link Source="@22" Target="@29" Bounds="965.876037597656,320.85400390625,95.6050415039063,0" />
+    <Link Source="@23" Target="@12" Bounds="602.67160906215,170.854005943961,541.603634608645,172.764942515855" />
+    <Link Source="@23" Target="@14" Bounds="616.774353027344,153.312240600586,37.6624755859375,1.84886169433594" />
+    <Link Source="@24" Target="@14" Bounds="631.910034179688,112.483276367188,107.707092285156,17.8955993652344" />
+    <Link Source="@24" Target="@19" Bounds="631.910034179688,71.3291397094727,107.707092285156,17.8955917358398" />
+    <Link Source="@25" Target="@28" Bounds="1256.63940429688,434.85400390625,128.38330078125,0" />
+    <Link Source="@26" Target="@28" Bounds="1245.64025878906,219.645355224609,180.254150390625,110.278411865234" />
+    <Link Source="@28" Target="(@1 @2 @3 Member=MousePos)" Category="Contains" />
+    <Link Source="@28" Target="(@1 @2 @6 Member=LeftLean)" Category="Contains" />
+    <Link Source="@28" Target="(@1 @2 @6 Member=Position)" Category="Contains" />
+    <Link Source="@28" Target="(@1 @2 @6 Member=RightLean)" Category="Contains" />
+    <Link Source="@29" Target="@10" Category="Contains" />
+    <Link Source="@29" Target="@12" Category="Contains" />
+    <Link Source="@30" Target="(@1 @2 @6 Member=Constraint)" Category="Contains" />
+    <Link Source="@30" Target="(@1 @2 @6 Member=Speed)" Category="Contains" />
+    <Link Source="@31" Target="@24" Bounds="641.391052246094,100.85400390625,475.323303222656,0" />
+    <Link Source="@31" Target="@28" Bounds="1205.76782226563,113.85400390625,227.961181640625,215.812591552734" />
+    <Link Source="@32" Target="@12" Bounds="587.92257661368,56.8540059439609,571.058615268069,285.475731853074" />
+    <Link Source="@4" Target="@13" Category="Contains" Bounds="1191.73669433594,26,6.5,29.9999961853027" />
+    <Link Source="@4" Target="@14" Category="Contains" />
+    <Link Source="@4" Target="@15" Category="Contains" />
+    <Link Source="@4" Target="@18" Category="Contains" Bounds="1191.73669433594,26,6.5,29.9999961853027" />
+    <Link Source="@4" Target="@19" Category="Contains" Bounds="1191.73669433594,26,6.5,29.9999961853027" />
+    <Link Source="@4" Target="@20" Category="Contains" Bounds="1191.73669433594,26,6.5,29.9999961853027" />
+    <Link Source="@4" Target="@21" Category="Contains" Bounds="1191.73669433594,26,6.5,29.9999961853027" />
+    <Link Source="@4" Target="@22" Category="Contains" Bounds="1191.73669433594,26,6.5,29.9999961853027" />
+    <Link Source="@4" Target="@23" Category="Contains" />
+    <Link Source="@4" Target="@24" Category="Contains" />
+    <Link Source="@4" Target="@25" Category="Contains" />
+    <Link Source="@4" Target="@26" Category="Contains" />
+    <Link Source="@4" Target="@27" Category="Contains" />
+    <Link Source="@4" Target="@28" Category="Contains" Bounds="1198.23669433594,-29.9999961853027,6.5,29.9999961853027" />
+    <Link Source="@4" Target="@29" Category="Contains" Bounds="1198.23669433594,-29.9999961853027,6.5,29.9999961853027" />
+    <Link Source="@4" Target="@31" Category="Contains" />
+    <Link Source="@4" Target="@32" Category="Contains" />
+    <Link Source="@4" Target="@7" Category="Contains" Bounds="1198.23669433594,-29.9999961853027,6.5,29.9999961853027" />
+    <Link Source="@4" Target="@9" Category="Contains" Bounds="1191.73669433594,26,6.5,29.9999961853027" />
+    <Link Source="@7" Target="@30" Category="Contains" />
+    <Link Source="@9" Target="@23" Bounds="342.025604248047,174.762115478516,184.816986083984,89.0918884277344" />
+    <Link Source="@9" Target="@24" Bounds="333.291687011719,119.078689575195,203.063842773438,144.775314331055" />
+    <Link Source="@9" Target="@25" Bounds="339.887298583984,289.85400390625,778.585845947266,138.002502441406" />
+    <Link Source="@9" Target="@26" Bounds="409.636016845703,219.171356201172,718.121307373047,57.6826477050781" />
+    <Link Source="@9" Target="@28" Bounds="330.944732666016,289.85400390625,1054.1471862793,189" />
+    <Link Source="@9" Target="@29" Bounds="351.525665283203,289.85400390625,710.019989013672,75" />
+    <Link Source="@9" Target="@31" Bounds="357.846771240234,116.717353820801,786.918731689453,147.136650085449" />
+    <Link Source="@9" Target="@32" Bounds="325.581115722656,60.0062408447266,192.438598632813,203.847763061523" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Class" Label="Class" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Classes" />
+    <Category Id="CodeSchema_Field" Label="Field" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Fields" />
+    <Category Id="CodeSchema_Member" Label="Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Members" />
+    <Category Id="CodeSchema_Method" Label="Method" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" NavigationActionLabel="Methods" />
+    <Category Id="CodeSchema_Type" Label="Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Types" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsInternal" Label="Is Internal" Description="Flag to indicate the method is 'Internal'" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="Is Private" Description="Flag to indicate the scope is Private" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" Description="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="LayoutSettings" DataType="Microsoft.VisualStudio.Diagrams.View.GroupLayoutStyle" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Parameter" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(8ccc77cf-01e9-4535-897a-9de7ff5b3a61.OutputPathUri)" />
+    <Alias n="2" Id="Namespace=VisualGraph" />
+    <Alias n="3" Id="Type=Form1" />
+    <Alias n="4" Id="(@1 @2 @3)" />
+    <Alias n="6" Id="Type=SplineNode" />
+    <Alias n="7" Id="(@1 @2 @6)" />
+    <Alias n="8" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/System.Drawing.dll" />
+    <Alias n="9" Id="(@1 @2 @3 Member=(Name=DrawToBuffer OverloadingParameters=[(@8 Namespace=System.Drawing Type=Graphics)]))" />
+    <Alias n="10" Id="(@1 @2 Type=FullSpline Member=(Name=Clicked OverloadingParameters=[(@8 Namespace=System.Drawing Type=Point)]))" />
+    <Alias n="11" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll" />
+    <Alias n="12" Id="(@1 @2 Type=FullSpline Member=(Name=Draw OverloadingParameters=[(@8 Namespace=System.Drawing Type=Graphics),(@11 Namespace=System Type=Boolean)]))" />
+    <Alias n="13" Id="(@1 @2 @3 Member=(Name=timer1_Tick OverloadingParameters=[(@11 Namespace=System Type=Object),(@11 Namespace=System Type=EventArgs)]))" />
+    <Alias n="14" Id="(@1 @2 @3 Member=(Name=удалитьToolStripMenuItem_Click OverloadingParameters=[(@11 Namespace=System Type=Object),(@11 Namespace=System Type=EventArgs)]))" />
+    <Alias n="15" Id="(@1 @2 @3 Member=(Name=удалитьВсеToolStripMenuItem_Click OverloadingParameters=[(@11 Namespace=System Type=Object),(@11 Namespace=System Type=EventArgs)]))" />
+    <Alias n="16" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/System.Windows.Forms.dll" />
+    <Alias n="17" Id="OverloadingParameters=[(@11 Namespace=System Type=Object),(@16 Namespace=System.Windows.Forms Type=MouseEventArgs)]" />
+    <Alias n="18" Id="(@1 @2 @3 Member=(Name=Form1_MouseClick @17))" />
+    <Alias n="19" Id="(@1 @2 @3 Member=(Name=Form1_MouseDoubleClick @17))" />
+    <Alias n="20" Id="(@1 @2 @3 Member=(Name=Form1_MouseDown @17))" />
+    <Alias n="21" Id="(@1 @2 @3 Member=(Name=Form1_MouseMove @17))" />
+    <Alias n="22" Id="(@1 @2 @3 Member=(Name=Form1_MouseUp @17))" />
+    <Alias n="23" Id="(@1 @2 @3 Member=ClickedID)" />
+    <Alias n="24" Id="(@1 @2 @3 Member=ClickedVertexID)" />
+    <Alias n="25" Id="(@1 @2 @3 Member=DrawDebug)" />
+    <Alias n="26" Id="(@1 @2 @3 Member=drawing)" />
+    <Alias n="27" Id="(@1 @2 @3 Member=MouseSpeed)" />
+    <Alias n="28" Id="(@1 @2 @3 Member=Nodes)" />
+    <Alias n="29" Id="(@1 @2 @3 Member=Splines)" />
+    <Alias n="30" Id="(@1 @2 @6 Member=Update)" />
+    <Alias n="31" Id="(@1 @2 @3 Member=Vertexes)" />
+    <Alias n="32" Id="(@1 @2 @3 Member=VertexID)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Comment" ValueLabel="Has comment">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="8ccc77cf-01e9-4535-897a-9de7ff5b3a61.OutputPathUri" Value="file:///C:/Users/pavyf/Documents/Visual Studio 2015/Projects/VisualGraph/VisualGraph/bin/Debug/VisualGraph.exe" />
+    <Path Id="FxReferenceAssembliesUri" Value="file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework" />
+  </Paths>
+</DirectedGraph>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="">
+    <Position X="11.219" Y="1.802" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="VisualGraph.FullSpline">
+    <Position X="6.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAgAAAAAAAAAAAAAAACEAAAAAAAAAAAA=</HashCode>
+      <FileName>FullSpline.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Vertexes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="VisualGraph.SplineNode">
+    <Position X="9.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAyAAEAAAAAAAQQgAAIAAIABAAAAAAAAACCAAAAAAAA=</HashCode>
+      <FileName>SplineNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Constraint" />
+      <Field Name="LeftLean" />
+      <Field Name="Position" />
+      <Field Name="RightLean" />
+      <Field Name="Speed" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VisualGraph.Form1">
+    <Position X="1.5" Y="1" Width="3.25" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Field Name="contextMenuStrip1" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="timer1" Hidden="true" />
+      <Field Name="удалитьToolStripMenuItem" Hidden="true" />
+      <Field Name="удалитьВсеToolStripMenuItem" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQiAAQECKAACMQQAISJAAACEAAAoAkggQQAgQAAAgE=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="MousePos" />
+      <Field Name="MouseSpeed" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="Nodes" />
+      <Field Name="Splines" />
+      <Field Name="Vertexes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Struct Name="System.Drawing.Point">
+    <Position X="6.75" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Struct>
+  <Struct Name="System.Drawing.PointF" Collapsed="true">
+    <Position X="8.75" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

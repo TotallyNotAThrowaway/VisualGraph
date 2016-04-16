@@ -10,9 +10,10 @@ C:\Users\pavyf\Documents\Visual Studio 2015\Projects\Test_new\Test\obj\Debug\Vis
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\bin\Debug\VisualGraph.exe.config
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\bin\Debug\VisualGraph.exe
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\bin\Debug\VisualGraph.pdb
-C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.csprojResolveAssemblyReference.cache
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\bin\Debug\VisualGraph.exe.CodeAnalysisLog.xml
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\bin\Debug\VisualGraph.exe.lastcodeanalysissucceeded
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.Form1.resources
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.Properties.Resources.resources
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.csproj.GenerateResource.Cache
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.exe
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.pdb
-C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.Form1.resources
