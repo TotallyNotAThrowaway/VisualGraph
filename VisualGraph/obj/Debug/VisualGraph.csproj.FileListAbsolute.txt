@@ -6,3 +6,4 @@ C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.csproj.GenerateResource.Cache
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.exe
 C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.pdb
+C:\Users\pavyf\Documents\Visual Studio 2015\Projects\VisualGraph\VisualGraph\obj\Debug\VisualGraph.csprojResolveAssemblyReference.cache
